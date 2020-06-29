@@ -1,0 +1,58 @@
+.popup {
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    width: 606px;
+    height: 320px;
+    background-color: #cf1a2b;
+    top: 86px;
+    overflow: hidden;
+    opacity: 0;
+    &_left-side {
+        width: 216px;
+        hr {
+            width: 217px;
+            height: 1px;
+            background-color: #fff;
+            border: none;
+            opacity: 0.2;
+        }
+    }
+    &_logo {
+        margin: 23px auto 18px 35px;
+    }
+    &_tie {
+        margin: 53px auto auto 73px;
+    }
+    &_rotate {
+        width: 1px;
+        height: 100%;
+        opacity: 0.2;
+        transform: rotate(180deg);
+        background-color: #fff;
+        border: none;
+        margin: 0;
+    }
+    &_center-side,&_right-side {
+        width: 191px;
+        padding: 25px 35px;
+    }
+    &_link {
+        list-style-type: none;
+        a {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2.13;
+        color: rgba(255, 255, 255, 0.72);
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+        }
+    }
+}
+.header_link a {
+    &:hover .popup {
+        overflow: visible;
+        opacity: 1;
+    }
+}

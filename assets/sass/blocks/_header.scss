@@ -1,0 +1,110 @@
+.header {
+    position: relative;
+    background: url(../img/bg.png) center (center/cover) no-repeat;
+    min-height: 655px;
+    &_menu {
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        height: 86px;
+        background-color: rgba(255,255,255,.94);
+        box-shadow: 1.5px 2.6px 3px 0 rgba(0, 0, 0, 0.31);
+    }
+    &_logo {
+        display: inline-flex;
+        padding-top: 31px;
+        width: 131px;
+        margin-left: 20px;
+    }
+    &_nav {
+        display: inline-flex;
+        position: absolute;
+        padding-top: 32px;
+        margin-left: 281px;
+    }
+    &_link {
+        list-style-type: none;
+        width: 100%;
+        a {
+            padding: 36px  20px;
+            font-size: 18px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #626262;
+            text-decoration-line: none;
+            &:hover {
+                color: #fff;
+                height: 86px;
+                background-color: #cf1a2b;
+            }
+        }
+    }
+    &_cart {
+        cursor: pointer;
+        display: inline-flex;
+        position: absolute;
+        justify-items: center;
+        align-items: center;
+        right: 0;
+        padding-top: 32px;
+        margin-right: 20px;
+    }
+    &_icon {
+        width: 29px;
+        height: 26px;
+        margin-right: 10px;
+    }
+    &_val {
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.83;
+        letter-spacing: normal;
+        text-align: left;
+        color: #9d9d9d;
+    }
+    &_arrow-down {
+        margin-left: 16px;
+    }
+    &_title {
+        padding-top: 300px;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 0.91;
+        letter-spacing: 29.04px;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    }
+    &_subtitle {
+        padding-top: 40px;
+        font-size: 116px;
+        font-weight: 700;
+        line-height: 0.17;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    }
+    &_arrow-left {
+        position: absolute;
+        cursor: pointer;
+        padding-left: 50px;
+        top: 300px;
+    }
+    &_arrow-right {
+        position: absolute;
+        cursor: pointer;
+        padding-right: 50px;
+        right: 0;
+        top: 300px;
+    }
+    &_burger-menu {
+        display: none;
+    }
+}
